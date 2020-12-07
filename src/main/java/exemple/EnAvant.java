@@ -12,21 +12,18 @@ import java.awt.Font;
  *
  * @author Salomé Chevailler
  */
-public class TousPetitsRonds extends EffetDAnimation {
-    
-    public TousPetitsRonds(Bandeau bandeau, int rep, String msg) {
+public class EnAvant extends EffetDAnimation {
+
+    public EnAvant(Bandeau bandeau, int rep, String msg) {
         super(bandeau, rep, msg);
     }
-    
+
     public void jouer() {
-        
         monBandeau.setMessage(msg);
-        for (int i = 0; i <= 100; i++) {
-            monBandeau.setRotation(-2 * Math.PI * i / 100);
-            monBandeau.setFont(new Font("Dialog", Font.BOLD, 30));
-            monBandeau.sleep(100);
+        for (int i = 15; i < 60; i += 20) {
+            monBandeau.setFont(new Font("Dialog", Font.BOLD, i));
+            monBandeau.sleep(1000);
         }
-        
+
     }
-    
 }

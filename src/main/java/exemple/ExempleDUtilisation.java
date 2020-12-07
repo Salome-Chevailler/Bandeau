@@ -14,6 +14,8 @@ public class ExempleDUtilisation {
         scenario.ajouterEffetDAnimation(new DoigtDevant(monBandeau,1,"Je mets le doigt devant"));
         scenario.ajouterEffetDAnimation(new DoigtDerriere(monBandeau,1,"Je mets le doigt derrière"));
         scenario.ajouterEffetDAnimation(new TousPetitsRonds(monBandeau,1,"Je fais de tous petits ronds"));
+        scenario.ajouterEffetDAnimation(new TourDeMoiMeme(monBandeau,1,"Je fais le tour de moi-même"));
+        scenario.ajouterEffetDAnimation(new EnAvant(monBandeau,1,"Et je vais en avant"));
         scenario.lancerScenario();
 
     }

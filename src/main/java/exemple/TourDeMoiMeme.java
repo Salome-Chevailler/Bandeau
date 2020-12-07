@@ -1,6 +1,7 @@
 package exemple;
 
 import bandeau.Bandeau;
+import java.awt.Font;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -22,6 +23,7 @@ public class TourDeMoiMeme extends EffetDAnimation {
         monBandeau.setMessage(msg);
         for (int i=0; i<=100; i++){
             monBandeau.setRotation(2*Math.PI*i/100);
+            monBandeau.setFont(new Font("Dialog", Font.BOLD, 30));
             monBandeau.sleep(100);
         }
     }
