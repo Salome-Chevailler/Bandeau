@@ -7,10 +7,18 @@ import java.awt.Font;
 public class ExempleDUtilisation {
     
     public static void main(String[] args) {
-	    new ExempleDUtilisation().exemple();
+	Bandeau monBandeau = new Bandeau();
+        Scenario scenario = new Scenario(monBandeau);
+        scenario.ajouterEffetDAnimation(new DoigtDevant(monBandeau,1,"Je mets le doigt devant"));
+        scenario.ajouterEffetDAnimation(new DoigtDerriere(monBandeau,1,"Je mets le doigt derrière"));
+        scenario.ajouterEffetDAnimation(new DoigtDevant(monBandeau,1,"Je mets le doigt devant"));
+        scenario.ajouterEffetDAnimation(new DoigtDerriere(monBandeau,1,"Je mets le doigt derrière"));
+        scenario.ajouterEffetDAnimation(new TousPetitsRonds(monBandeau,1,"Je fais de tous petits ronds"));
+        scenario.lancerScenario();
+
     }
     
-    public void exemple() {
+  /*  public void exemple() {
 	Bandeau monBandeau = new Bandeau();
         Font font = monBandeau.getFont();
         Color back = monBandeau.getBackground();
@@ -57,5 +65,5 @@ public class ExempleDUtilisation {
 	monBandeau.setMessage("Terminé");
 	monBandeau.sleep(3000);
 	monBandeau.close();
-   }
+   }*/
 }
