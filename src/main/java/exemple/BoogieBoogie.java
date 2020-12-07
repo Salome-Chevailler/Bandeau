@@ -7,7 +7,6 @@ package exemple;
 
 import bandeau.Bandeau;
 import java.awt.Color;
-import static java.lang.Thread.sleep;
 import static sun.jvm.hotspot.runtime.PerfMemory.start;
 
 /**
@@ -33,24 +32,29 @@ public class BoogieBoogie extends EffetDAnimation {
         clignote = false;
     }
     
+    @Override
     public void jouer(){
        monBandeau.setMessage(msg); 
        
-       while(clignote){
+       for (int i=0; i<=94; i+=3){
+           monBandeau.setBackground(Color.CYAN);
+           monBandeau.setForeground(Color.ORANGE);
+           monBandeau.sleep(5);
+           }
+       
+       for (int i=3; i<=97; i+=3){
            monBandeau.setBackground(Color.red);
            monBandeau.setForeground(Color.white);
-           try{
-               sleep(5);
-           } catch (InterruptedException e){
+           monBandeau.sleep(5);
            }
-           
+        
+        for (int i=6; i<=100; i+=3){
            monBandeau.setBackground(Color.blue);
            monBandeau.setForeground(Color.yellow);
-           try{
-               sleep(5);
-           } catch (InterruptedException e){
-           }
+           monBandeau.sleep(5);  
        }
+        monBandeau.sleep(100);
+        
     }
     
 }
