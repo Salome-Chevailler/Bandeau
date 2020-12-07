@@ -24,7 +24,7 @@ public class EnAvant extends EffetDAnimation {
         for (int i = 15; i < 60; i += 20) {
             monBandeau.setFont(new Font("Dialog", Font.BOLD, i));
             monBandeau.setBackground(Color.LIGHT_GRAY);
-            monBandeau.setForeground(Color.GREEN);
+            monBandeau.setForeground(Color.magenta);
             monBandeau.sleep(1000);
         }
 
