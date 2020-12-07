@@ -7,6 +7,7 @@ package exemple;
 
 import bandeau.Bandeau;
 import java.awt.Color;
+import java.awt.Font;
 import static sun.jvm.hotspot.runtime.PerfMemory.start;
 
 /**
@@ -49,6 +50,7 @@ public class BoogieBoogie extends EffetDAnimation {
            }
         
         for (int i=6; i<=100; i+=3){
+           monBandeau.setFont(new Font("Dialog3", Font.CENTER_BASELINE, 5 + i));
            monBandeau.setBackground(Color.blue);
            monBandeau.setForeground(Color.yellow);
            monBandeau.sleep(5);  
