@@ -1,6 +1,7 @@
 package exemple;
 
 import bandeau.Bandeau;
+import java.awt.Color;
 import java.awt.Font;
 
 /*
@@ -22,6 +23,7 @@ public class TourDeMoiMeme extends EffetDAnimation {
     public void jouer(){
         monBandeau.setMessage(msg);
         for (int i=0; i<=100; i++){
+            monBandeau.setBackground(Color.WHITE);
             monBandeau.setRotation(2*Math.PI*i/100);
             monBandeau.setFont(new Font("Dialog", Font.BOLD, 30));
             monBandeau.sleep(100);
