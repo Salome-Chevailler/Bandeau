@@ -23,7 +23,7 @@ public class DoigtDerriere extends EffetDAnimation {
     public void jouer(){
         monBandeau.setMessage(msg);
         for (int i=60; i>5; i-=5 ){
-            monBandeau.setFont ( new Font ("Dialog", Font.ITALIC, 5-i));
+            monBandeau.setFont ( new Font ("Dialog1", Font.ITALIC, 5-i));
             monBandeau.setBackground(Color.BLUE);
             monBandeau.setForeground(Color.PINK);
             monBandeau.sleep(100);
