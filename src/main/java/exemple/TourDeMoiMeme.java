@@ -23,6 +23,7 @@ public class TourDeMoiMeme extends EffetDAnimation {
     public void jouer(){
         monBandeau.setMessage(msg);
         for (int i=0; i<=100; i++){
+            monBandeau.setBackground(Color.WHITE);
             monBandeau.setRotation(2*Math.PI*i/100);
             monBandeau.setFont(new Font("Dialog4", Font.ROMAN_BASELINE, 30));
             monBandeau.setBackground(Color.BLACK);
