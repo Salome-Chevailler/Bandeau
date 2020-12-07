@@ -13,7 +13,7 @@ public class ExempleDUtilisation {
         scenario.ajouterEffetDAnimation(new DoigtDerriere(monBandeau,1,"Je mets le doigt derrière"));
         scenario.ajouterEffetDAnimation(new DoigtDevant(monBandeau,1,"Je mets le doigt devant"));
         scenario.ajouterEffetDAnimation(new TousPetitsRonds(monBandeau,1,"Je fais de tous petits ronds"));
-        scenario.ajouterEffetDAnimation(new BoogieBoogie(monBandeau,5,"Je fais le Boogie Boogie"));
+        scenario.ajouterEffetDAnimation(new BoogieBoogie(monBandeau,1,"Je fais le Boogie Boogie"));
         scenario.ajouterEffetDAnimation(new TourDeMoiMeme(monBandeau,1,"Je fais le tour de moi-même"));
         scenario.ajouterEffetDAnimation(new EnAvant(monBandeau,1,"Et je vais en avant"));
         
