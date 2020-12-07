@@ -6,6 +6,7 @@
 package exemple;
 
 import bandeau.Bandeau;
+import java.awt.Color;
 import java.awt.Font;
 
 /**
@@ -22,6 +23,8 @@ public class DoigtDevant extends EffetDAnimation {
         monBandeau.setMessage(msg);
         for (int i = 5; i < 60; i += 5) {
             monBandeau.setFont(new Font("Dialog", Font.BOLD, 5 + i));
+            monBandeau.setBackground(Color.PINK);
+            monBandeau.setForeground(Color.BLUE);
             monBandeau.sleep(100);
         }
     }
