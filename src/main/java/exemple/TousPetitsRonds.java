@@ -6,6 +6,7 @@
 package exemple;
 
 import bandeau.Bandeau;
+import java.awt.Color;
 import java.awt.Font;
 
 /**
@@ -23,7 +24,9 @@ public class TousPetitsRonds extends EffetDAnimation {
         monBandeau.setMessage(msg);
         for (int i = 0; i <= 100; i++) {
             monBandeau.setRotation(-2 * Math.PI * i / 100);
-            monBandeau.setFont(new Font("Dialog", Font.BOLD, 30));
+            monBandeau.setFont(new Font("Dialog2", Font.HANGING_BASELINE, 30));
+            monBandeau.setBackground(Color.ORANGE);
+            monBandeau.setForeground(Color.MAGENTA);
             monBandeau.sleep(100);
         }
         
