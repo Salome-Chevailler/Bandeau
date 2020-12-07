@@ -10,8 +10,8 @@ public class ExempleDUtilisation {
 	Bandeau monBandeau = new Bandeau();
         Scenario scenario = new Scenario(monBandeau);
         
-        scenario.ajouterEffetDAnimation(new Simple(monBandeau,1,"Vous êtes près ?"));
-        scenario.ajouterEffetDAnimation(new Simple(monBandeau,1,"ça va commencer..."));
+        scenario.ajouterEffetDAnimation(new Simple(monBandeau,2,"Vous êtes près ?"));
+        scenario.ajouterEffetDAnimation(new Simple(monBandeau,2,"ça va commencer..."));
         scenario.ajouterEffetDAnimation(new DoigtDevant(monBandeau,1,"Je mets le doigt devant"));
         scenario.ajouterEffetDAnimation(new DoigtDerriere(monBandeau,1,"Je mets le doigt derrière"));
         scenario.ajouterEffetDAnimation(new DoigtDevant(monBandeau,1,"Je mets le doigt devant"));
